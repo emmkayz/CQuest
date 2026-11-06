@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6f3;
+    color: #26352b;
+}
+
+.app-container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1e392b;
+    color: white;
+    padding: 20px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    cursor: pointer;
+    color: #d5e5d9
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.welcome-section {
+    margin-bottom: 35px;
+}
+
+.welcome-section h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.welcome-section p {
+    color: #718076;
+}
+
+.stats-container {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-card {
+    background-color: white;
+    flex: 1;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h3 {
+    font-size: 15px;
+    color: #718076;
+    margin-top: 0;
+}
+
+.stat-card p {
+    font-size: 26px;
+    font-weight: bold;
+    color: #247344;
+    margin-bottom: 0;
+}
+
+.footprint-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.footprint-section p {
+    color: #526158;
+    padding: 5px 0;
+}
+
+.leaderboard-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.leaderboard-section ol {
+    padding-left: 25px;
+}
+
+.leaderboard-section li {
+    padding: 10px 0;
+    border-bottom: 1px solid #edf0ed;
+}
+
+.suggestions-section {
+    background-color: #e0f0e4;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #31945a;
+}
+
+.suggestions-section p {
+    color: #435b49;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #718076;
+    font-size: 14px;
+}
+
+@media (max-width: 650px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 25px 20px;
+    }
+
+    .stats-container {
+        flex-direction: column;
+    }
+
+    .welcome-section h2 {
+        font-size: 23px;
+    }
+}
