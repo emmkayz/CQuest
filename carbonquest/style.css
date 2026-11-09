@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f3f6f3;
+    background-color: #EAF1E9;
     color: #26352b;
 }
 
@@ -144,6 +144,42 @@ footer {
     padding: 20px;
     color: #718076;
     font-size: 14px;
+}
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.dashboard-left,
+.dashboard-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboard-left section,
+.dashboard-right section {
+    margin-bottom: 0;
+}
+
+.chart-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.chart-section p {
+    color: #718076;
+    font-size: 14px;
+}
+
+.chart-section canvas {
+    max-width: 100%;
+    max-height: 280px;
 }
 
 @media (max-width: 650px) {

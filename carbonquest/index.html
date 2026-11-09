@@ -8,8 +8,8 @@
     <div class="app-container">
         <header>
             <nav>
-               <img src="logo.png">
-                <ul>
+                <img src="logo.png">
+                <ul class="nav-links">
                     <li>Dashboard</li>
                     <li>Leaderboard</li>
                     <li>My Profile</li>
@@ -22,52 +22,76 @@
                 <h2>Welcome back, (name)</h2>
                 <p>Here's your environmental impact overview:</p>
             </section>
+            <div class="dashboard-layout">
 
-            <section class="stats-section">
-                <h2>Your Stats</h2>
+    <div class="dashboard-left">
 
-                <div class="stats-container">
-                        
-                    <div class="stat-card">
-                        <h3>Carbon Footprint</h3>
-                        <p>42.8 kg CO2</p>
-                    </div>
+        <section class="stats-section">
+            <h2>Your Stats</h2>
 
-                    <div class="stat-card">
-                        <h3>Activites Submitted</h3>
-                        <p>18</p>
-                    </div>
+            <div class="stats-container">
 
+                <div class="stat-card">
+                    <h3>Carbon Footprint</h3>
+                    <p>42.8 kg CO2</p>
                 </div>
-            </section>
 
-            <section class="footprint-section">
-                <h2>Emissions Breakdown</h2>
-                <p>Transport: 55%</p>
-                <p>Food: 30%</p>
-                <p>Energy: 15%</p>
-            </section>
+                <div class="stat-card">
+                    <h3>Activities Submitted</h3>
+                    <p>18</p>
+                </div>
 
-            <section class="leaderboard-section">
-                <h2>Local Leaderboard</h2>
+            </div>
+        </section>
 
-                <ol>
-                    <li>James - 28.4kg CO2</li>
-                    <li>Morgan - 34.1kg CO2</li>
-                    <li>Alex - 42.8kg CO2</li>
-                </ol>
-            </section>
+        <section class="footprint-section">
+            <h2>Emissions Breakdown</h2>
+            <p>Transport: 55%</p>
+            <p>Food: 30%</p>
+            <p>Energy: 15%</p>
+        </section>
 
-            <section class="suggestions-section">
-                <h2>Today's Tip:</h2>
-                    <p>Consider walking or taking the bus for shorter journeys to reduce your transport emissions.</p>
-                </h2>
-            </section>
+        <section class="leaderboard-section">
+            <h2>Local Leaderboard</h2>
+
+            <ol>
+                <li>James - 28.4kg CO2</li>
+                <li>Morgan - 34.1kg CO2</li>
+                <li>Alex - 42.8kg CO2</li>
+            </ol>
+        </section>
+
+        <section class="suggestions-section">
+            <h2>Today's Tip:</h2>
+            <p>Consider walking or taking the bus for shorter journeys to reduce your transport emissions.</p>
+        </section>
+
+    </div>
+
+    <div class="dashboard-right">
+
+        <section class="chart-section">
+            <h2>Weekly Carbon Emissions</h2>
+            <p>Your emissions throughout the week.</p>
+            <canvas id="emissionsBarChart"></canvas>
+        </section>
+
+        <section class="chart-section">
+            <h2>Emissions by Category</h2>
+            <p>Where your carbon footprint comes from.</p>
+            <canvas id="emissionsPieChart"></canvas>
+        </section>
+
+    </div>
+
+</div>
         </main>
 
         <footer>
             <p>Carbon Quest - Lower your carbon footprint!</p>
         </footer>
     </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
